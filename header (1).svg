@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" aria-label="Mahmoud Yousry, Software Engineer and Flutter Developer" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="banner" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#8E87FF"/>
+      <stop offset="1" stop-color="#4DDCC8"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6C63FF"/>
+      <stop offset="1" stop-color="#00D9C0"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#6C63FF"/>
+      <stop offset="1" stop-color="#00C2B0"/>
+    </linearGradient>
+    <clipPath id="bannerClip">
+      <path d="M0,90 Q0,70 20,70 H880 Q900,70 900,90 V340 C825,380 750,380 675,340 C600,300 525,300 450,340 C375,380 300,380 225,340 C150,300 75,300 0,340 Z"/>
+    </clipPath>
+    <clipPath id="clip">
+      <rect x="282" y="32" width="236" height="496" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+
+    .w1    { animation: waveL 9s linear infinite; }
+    .w2    { animation: waveR 14s linear infinite; }
+    .phone { animation: bob 6s ease-in-out infinite; }
+    .shadow{ transform-box: fill-box; transform-origin: center; animation: shadow 6s ease-in-out infinite; }
+    .chip  { animation: float 4.5s ease-in-out infinite; }
+    .ring  { transform-box: fill-box; transform-origin: center; animation: ring 2.4s ease-out infinite; }
+    .ic    { transform-box: fill-box; transform-origin: center; animation: pop 3.6s ease-in-out infinite; }
+    .l     { opacity: 0; animation: cycle 12s infinite; }
+    .l1    { opacity: 1; animation-delay: 0s; }
+    .l2    { animation-delay: 3s; }
+    .l3    { animation-delay: 6s; }
+    .l4    { animation-delay: 9s; }
+    .bar   { animation: blink 1.6s ease-in-out infinite; }
+    .tw    { animation: blink 3s ease-in-out infinite; }
+    .tw2   { animation-delay: -1s; }
+    .tw3   { animation-delay: -2s; }
+    .intro { animation: rise .9s ease-out both; }
+
+    @keyframes waveL  { from { transform: translateX(0); }      to { transform: translateX(-450px); } }
+    @keyframes waveR  { from { transform: translateX(-450px); } to { transform: translateX(0); } }
+    @keyframes bob    { 0%,100% { transform: translateY(0); }   50% { transform: translateY(-9px); } }
+    @keyframes float  { 0%,100% { transform: translateY(0); }   50% { transform: translateY(-6px); } }
+    @keyframes shadow { 0%,100% { transform: scaleX(1); opacity: .22; } 50% { transform: scaleX(.86); opacity: .12; } }
+    @keyframes ring   { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.55); opacity: 0; } }
+    @keyframes pop    { 0%,100% { transform: scale(1); }        50% { transform: scale(1.09); } }
+    @keyframes blink  { 0%,100% { opacity: .3; }                50% { opacity: 1; } }
+    @keyframes rise   { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes cycle  {
+      0%   { opacity: 0; transform: translateY(8px); }
+      4%   { opacity: 1; transform: translateY(0); }
+      22%  { opacity: 1; transform: translateY(0); }
+      26%  { opacity: 0; transform: translateY(-8px); }
+      100% { opacity: 0; transform: translateY(-8px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .l1 { opacity: 1; }
+    }
+  </style>
+
+  <!-- ============ WAVE BANNER ============ -->
+  <g clip-path="url(#bannerClip)">
+    <rect x="0" y="70" width="900" height="320" fill="url(#banner)"/>
+
+    <!-- moving waves -->
+    <g class="w1">
+      <path fill="#fff" fill-opacity=".14" d="M0,285 C112,260 337,310 450,285 C562,260 787,310 900,285 C1012,260 1237,310 1350,285 C1462,260 1687,310 1800,285 V420 H0 Z"/>
+    </g>
+    <g class="w2">
+      <path fill="#fff" fill-opacity=".10" d="M0,310 C112,285 337,335 450,310 C562,285 787,335 900,310 C1012,285 1237,335 1350,310 C1462,285 1687,335 1800,310 V420 H0 Z"/>
+    </g>
+
+    <!-- twinkles -->
+    <circle class="tw"       cx="360" cy="105" r="2.5" fill="#fff"/>
+    <circle class="tw tw2"   cx="470" cy="150" r="2"   fill="#fff"/>
+    <circle class="tw tw3"   cx="40"  cy="120" r="2"   fill="#fff"/>
+    <circle class="tw tw2"   cx="540" cy="250" r="2.5" fill="#fff"/>
+    <circle class="tw"       cx="300" cy="300" r="2"   fill="#fff"/>
+  </g>
+
+  <!-- ============ BANNER TEXT ============ -->
+  <g class="intro">
+    <text x="48" y="163" font-size="58" font-weight="800" fill="#fff">Mahmoud Yousry</text>
+    <text x="50" y="201" font-size="21" font-weight="600" fill="#fff" fill-opacity=".95">Software Engineer • Flutter Developer</text>
+
+    <rect x="50" y="219" width="4" height="22" rx="2" fill="#fff" fill-opacity=".85"/>
+    <text class="l l1" x="64" y="236" font-size="16" font-weight="600" fill="#fff">Real-time tracking apps</text>
+    <text class="l l2" x="64" y="236" font-size="16" font-weight="600" fill="#fff">Clean Architecture · Bloc · GetX</text>
+    <text class="l l3" x="64" y="236" font-size="16" font-weight="600" fill="#fff">Arabic (RTL)-first UI</text>
+    <text class="l l4" x="64" y="236" font-size="16" font-weight="600" fill="#fff">Live on App Store &amp; Google Play</text>
+  </g>
+
+  <!-- tech pills -->
+  <g class="chip" style="animation-delay:0s">
+    <rect x="50" y="256" width="98" height="32" rx="16" fill="#0D1117" fill-opacity=".85" stroke="#fff" stroke-opacity=".3"/>
+    <circle cx="68" cy="272" r="5" fill="#42A5F5"/>
+    <text x="80" y="277" font-size="14" font-weight="600" fill="#fff">Flutter</text>
+  </g>
+  <g class="chip" style="animation-delay:-.9s">
+    <rect x="158" y="256" width="80" height="32" rx="16" fill="#0D1117" fill-opacity=".85" stroke="#fff" stroke-opacity=".3"/>
+    <circle cx="176" cy="272" r="5" fill="#00D9C0"/>
+    <text x="188" y="277" font-size="14" font-weight="600" fill="#fff">Dart</text>
+  </g>
+  <g class="chip" style="animation-delay:-1.8s">
+    <rect x="248" y="256" width="80" height="32" rx="16" fill="#0D1117" fill-opacity=".85" stroke="#fff" stroke-opacity=".3"/>
+    <circle cx="266" cy="272" r="5" fill="#8E87FF"/>
+    <text x="278" y="277" font-size="14" font-weight="600" fill="#fff">Bloc</text>
+  </g>
+  <g class="chip" style="animation-delay:-2.7s">
+    <rect x="338" y="256" width="104" height="32" rx="16" fill="#0D1117" fill-opacity=".85" stroke="#fff" stroke-opacity=".3"/>
+    <circle cx="356" cy="272" r="5" fill="#FFCA28"/>
+    <text x="368" y="277" font-size="14" font-weight="600" fill="#fff">Firebase</text>
+  </g>
+  <g class="chip" style="animation-delay:-3.6s">
+    <rect x="452" y="256" width="84" height="32" rx="16" fill="#0D1117" fill-opacity=".85" stroke="#fff" stroke-opacity=".3"/>
+    <circle cx="470" cy="272" r="5" fill="#FF7043"/>
+    <text x="482" y="277" font-size="14" font-weight="600" fill="#fff">GetX</text>
+  </g>
+
+  <!-- ============ PHONE (sits on top of the banner) ============ -->
+  <g transform="translate(380,-4) scale(0.8)">
+    <ellipse class="shadow" cx="400" cy="556" rx="115" ry="8" fill="#000" opacity=".22"/>
+
+    <g class="phone">
+      <rect x="266" y="120" width="4" height="40" rx="2" fill="#30363D"/>
+      <rect x="530" y="150" width="4" height="72" rx="2" fill="#30363D"/>
+
+      <rect x="270" y="20" width="260" height="520" rx="44" fill="#0D1117" stroke="url(#brand)" stroke-width="3"/>
+
+      <g clip-path="url(#clip)">
+        <rect x="282" y="32" width="236" height="496" fill="url(#screen)"/>
+        <circle cx="510" cy="62" r="72" fill="#fff" opacity=".08"/>
+        <circle cx="292" cy="505" r="92" fill="#fff" opacity=".08"/>
+
+        <!-- status bar -->
+        <text x="308" y="62" font-size="11" font-weight="700" fill="#fff">9:41</text>
+        <rect x="450" y="55" width="3" height="5" rx="1" fill="#fff"/>
+        <rect x="456" y="52" width="3" height="8" rx="1" fill="#fff"/>
+        <rect x="462" y="49" width="3" height="11" rx="1" fill="#fff"/>
+        <rect x="472" y="50" width="22" height="11" rx="3.5" fill="none" stroke="#fff" stroke-width="1.2"/>
+        <rect x="474" y="52" width="15" height="7" rx="2" fill="#fff"/>
+        <rect x="495" y="53" width="2" height="5" rx="1" fill="#fff"/>
+
+        <!-- avatar -->
+        <circle class="ring" cx="400" cy="140" r="40" fill="none" stroke="#fff" stroke-width="2"/>
+        <circle cx="400" cy="140" r="38" fill="#fff" fill-opacity=".18" stroke="#fff" stroke-width="3"/>
+        <text x="400" y="151" font-size="30" font-weight="800" fill="#fff" text-anchor="middle">MY</text>
+
+        <text x="400" y="208" font-size="22" font-weight="800" fill="#fff" text-anchor="middle">Mahmoud Yousry</text>
+        <text x="400" y="230" font-size="13" font-weight="600" fill="#fff" fill-opacity=".92" text-anchor="middle">Flutter Developer</text>
+        <text x="400" y="247" font-size="11" fill="#fff" fill-opacity=".8" text-anchor="middle">📍 Cairo, Egypt</text>
+
+        <!-- status pill -->
+        <rect x="300" y="260" width="200" height="24" rx="12" fill="#fff" fill-opacity=".2"/>
+        <circle class="bar" cx="350" cy="272" r="4" fill="#3DFF9A"/>
+        <text x="410" y="276" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Open to work</text>
+
+        <!-- app icons -->
+        <g class="ic" style="animation-delay:0s">
+          <rect x="304" y="300" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="330" y="334" font-size="26" text-anchor="middle">🕋</text>
+        </g>
+        <text x="330" y="368" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">TWT Hajj</text>
+
+        <g class="ic" style="animation-delay:-.6s">
+          <rect x="374" y="300" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="400" y="334" font-size="26" text-anchor="middle">🧒</text>
+        </g>
+        <text x="400" y="368" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">TWTD</text>
+
+        <g class="ic" style="animation-delay:-1.2s">
+          <rect x="444" y="300" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="470" y="334" font-size="26" text-anchor="middle">🛡️</text>
+        </g>
+        <text x="470" y="368" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Insurify</text>
+
+        <g class="ic" style="animation-delay:-1.8s">
+          <rect x="304" y="386" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="330" y="420" font-size="26" text-anchor="middle">⚽</text>
+        </g>
+        <text x="330" y="454" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">Scout</text>
+
+        <g class="ic" style="animation-delay:-2.4s">
+          <rect x="374" y="386" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="400" y="420" font-size="26" text-anchor="middle">🚚</text>
+        </g>
+        <text x="400" y="454" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">KM Logistics</text>
+
+        <g class="ic" style="animation-delay:-3s">
+          <rect x="444" y="386" width="52" height="52" rx="14" fill="#fff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+          <text x="470" y="420" font-size="26" text-anchor="middle">🛒</text>
+        </g>
+        <text x="470" y="454" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">GemStore</text>
+
+        <circle class="bar" cx="388" cy="486" r="3" fill="#fff"/>
+        <circle cx="400" cy="486" r="3" fill="#fff" fill-opacity=".4"/>
+        <circle cx="412" cy="486" r="3" fill="#fff" fill-opacity=".4"/>
+        <rect x="360" y="508" width="80" height="5" rx="2.5" fill="#fff" fill-opacity=".75"/>
+      </g>
+
+      <!-- notch -->
+      <rect x="365" y="40" width="70" height="20" rx="10" fill="#0D1117"/>
+      <circle cx="420" cy="50" r="3" fill="#1F2937"/>
+    </g>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplMzJjN2QxZC00OGQzLTRlYjktYWE1Ni04MjQ5M2NkODM1MWIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaBaAYsHVi8COkQLShXv+p6kAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpjMGI0ZDc4OC05MjNiLTQxNGEtOTlkZS1kZTRkNDg0MzYzYmRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo3OuB21C8GVMtQEZMzwoD0gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggLYlGulRNBIdayCmUvhlaDOuFWqNGgqYkP45itBJaT/ykZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMzHZ/LQoa7SSGFwi1wax84AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIFcuNU+h/KUMpCmXaXyhfZeeLZ34WyyWokOWUtkhO1urZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GS+fZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmUzMmM3ZDFkLTQ4ZDMtNGViOS1hYTU2LTgyNDkzY2Q4MzUxYi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmI4NTliMDU2LWYzZjUtNGIxNS1iMzNhLTMwMDY1ZWRiZTcyYnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAtiUa6VE0Eh1rIKZS+GVoM64Vao0aCpiQ/jmK0ElpP/KJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggHosHCRlFaeeTJ1DlBGCNLvFnlQwRt6E22olwVrmDftuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggYNg/el7NUqDIWvlNX1vpbHIiJcNsMAmbpBWf305cFal0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQCI17qrBhtXesdOtxuaCts09gRXWTOR9ZjrlzyRyXQQor8vAFTJr7ws1dy8FcNrvPDwmjH9b2zB0NQbaZJMtqp8=</c2pa:manifest></metadata></svg>
