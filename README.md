@@ -1,19 +1,13 @@
 <!-- ===================== HEADER ===================== -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:6C63FF,100:00D9C0&text=Mahmoud%20Yousry&fontColor=ffffff&fontSize=52&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Flutter%20Developer&descSize=20&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
-
-<a href="https://github.com/myousry11">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=6C63FF&center=true&vCenter=true&width=620&lines=Shipping+Flutter+apps+to+App+Store+%26+Google+Play;Real-time+tracking+apps+used+by+tens+of+thousands;Clean+Architecture+%C2%B7+Bloc+%C2%B7+GetX+%C2%B7+Firebase;Arabic+(RTL)+first+UI+that+feels+native" alt="typing" />
-</a>
+<img src="header.svg" alt="Mahmoud Yousry, Flutter Developer" width="720"/>
 
 <br/>
 
 <a href="mailto:mahmoudyosry73@gmail.com"><img src="https://img.shields.io/badge/Email-6C63FF?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 <a href="https://www.linkedin.com/in/mahmoudyousry1"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/myousry11"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<img src="https://komarev.com/ghpvc/?username=myousry11&label=Profile%20views&color=00D9C0&style=for-the-badge" alt="views"/>
-
 </div>
 
 <br/>
@@ -162,16 +156,11 @@ Track and manage customer debts with data entry, advanced search, sorting, and f
 <br/>
 
 <!-- ===================== STATS ===================== -->
-## 📊 GitHub Stats
+## 📊 By the Numbers
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=myousry11&show_icons=true&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9C0&text_color=C9D1D9" alt="stats"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=myousry11&layout=compact&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9" alt="top langs"/>
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=myousry11&hide_border=true&background=0D1117&ring=6C63FF&fire=00D9C0&currStreakLabel=6C63FF&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="streak"/>
+<img src="numbers.svg" alt="By the numbers" width="720"/>
 
 </div>
 
