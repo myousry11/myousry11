@@ -1,7 +1,7 @@
 <!-- ===================== HEADER ===================== -->
 <div align="center">
 
-<img src="header.svg" alt="Mahmoud Yousry, Flutter Developer" width="720"/>
+<img src="header.svg" alt="Mahmoud Yousry, Flutter Developer" width="840"/>
 
 <br/>
 
